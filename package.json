@@ -1,0 +1,21 @@
+{
+  "name": "baseball-baserunner-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean-docs": "rimraf docs",
+    "clean-coverage": "rimraf scr/tests-reports",
+    "start": "parcel src/index.html ./ --out-dir docs",
+    "lint": "eslint src/scripts/*",
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs",
+    "docs": "npm run clean-docs && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-radtket": "^1.0.22",
+    "snapsvg": "^0.4.0"
+  }
+}
