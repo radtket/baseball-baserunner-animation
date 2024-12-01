@@ -8,7 +8,7 @@
     "clean-coverage": "rimraf scr/tests-reports",
     "start": "parcel src/index.html ./ --out-dir docs",
     "lint": "eslint src/scripts/*",
-    "build": "parcel build src/index.html --public-url ./ --out-dir docs",
+    "build": "parcel build src/index.html  --no-minify --public-url ./ --out-dir docs",
     "docs": "npm run clean-docs && npm run build"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "eslint-config-radtket": "^1.0.22",
-    "snapsvg": "^0.4.0"
+    "snapsvg": "^0.4.0",
+    "parcel-bundler": "^1.12.4"
   }
 }
